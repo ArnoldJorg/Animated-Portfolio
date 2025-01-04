@@ -48,12 +48,12 @@ const FinstaSection = () => {
         <img
           src={FinstaPage}
           className="  rounded-2xl"
-          alt="Finsta-Mobile-Interface-Page-Image"
+          alt="Finsta-Mobile-Interface"
         />
         <img
           src={FinstaPhone}
           className=" flex  w-[40%] rounded-3xl  "
-          alt="user-profile-phone-interface-image"
+          alt="user-profile-phone-interface"
         />
       </div>
       <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] flex-col ">
@@ -76,12 +76,12 @@ const FinstaSection = () => {
         <img
           src={Logo5}
           className="flex rounded-2xl border"
-          alt="the-finsta-call-function-image"
+          alt="the-finsta-call-function"
         />
         <img
           src={Logo4}
           className=" flex  w-[40%] rounded-3xl  "
-          alt="the-previous-profile-interface-image"
+          alt="the-previous-profile-interface"
         />
       </div>
       <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] flex-col ">
