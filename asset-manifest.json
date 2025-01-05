@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.b5f5bc6b.css",
+    "main.css": "/My-Portfolio/static/css/main.d94b3857.css",
     "main.js": "/My-Portfolio/static/js/main.21f535c2.js",
     "static/js/453.44ee00e7.chunk.js": "/My-Portfolio/static/js/453.44ee00e7.chunk.js",
     "static/media/ArrowAnimation.MP4": "/My-Portfolio/static/media/ArrowAnimation.11589e98108c1bac746b.MP4",
@@ -24,12 +24,12 @@
     "static/media/axios-logo.png": "/My-Portfolio/static/media/axios-logo.719a303d970691328f07.png",
     "static/media/JavaScript-logo.png": "/My-Portfolio/static/media/JavaScript-logo.3ade557547ee3603cbf9.png",
     "index.html": "/My-Portfolio/index.html",
-    "main.b5f5bc6b.css.map": "/My-Portfolio/static/css/main.b5f5bc6b.css.map",
+    "main.d94b3857.css.map": "/My-Portfolio/static/css/main.d94b3857.css.map",
     "main.21f535c2.js.map": "/My-Portfolio/static/js/main.21f535c2.js.map",
     "453.44ee00e7.chunk.js.map": "/My-Portfolio/static/js/453.44ee00e7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5f5bc6b.css",
+    "static/css/main.d94b3857.css",
     "static/js/main.21f535c2.js"
   ]
 }
