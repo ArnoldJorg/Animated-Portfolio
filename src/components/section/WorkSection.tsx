@@ -7,6 +7,7 @@ import QpointSection from "./QpointSection.tsx";
 const WorkSection = ({ onInViewChange }) => {
   const { ref, inView } = useInView({
     // threshold: 0.2,
+    // threshold: 0.3, is uni project
     threshold: 0.2,
   });
 

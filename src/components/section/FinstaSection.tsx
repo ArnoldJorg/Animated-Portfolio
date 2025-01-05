@@ -10,7 +10,7 @@ const FinstaSection = () => {
     <div className="flex flex-col w-screen mx-auto items-center pb-[4vw] ">
       {/* Spacer for fixed header */}
 
-      <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] flex-col justify-center ">
+      <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] flex-col justify-center">
         <div
           id="work-title"
           className="flex phone:flex-col lg:flex-row items-center sm:space-y-1 lg:justify-between py-[1vw] rounded-md"
@@ -106,6 +106,16 @@ const FinstaSection = () => {
           flows and craft user-centric designs that combine functionality with
           an exceptional user experience.
         </p>
+      </div>
+      <div className="flex lg:w-[30%]  phone:w-[60%] flex-row justify-center space-x-6 m-10 ">
+        <div className="flex bg-custom-grey-3 p-8 rounded-lg w-full  items-center justify-center">
+          <a
+            href="https://apps.apple.com/us/app/finsta-chat/id6476054514"
+            className="flex  break-all text-lg text-custom-white font-custom opacity-80 text-center underline flex-wrap"
+          >
+            https://apps.apple.com/finsta
+          </a>
+        </div>
       </div>
     </div>
   );

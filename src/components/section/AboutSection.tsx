@@ -1,14 +1,15 @@
 import React from "react";
-
 import GradientButton from "../GradientButton.tsx";
 import VideoPlayer from "../video/VideoPlayer.tsx";
 import QpointLogo from "../../assets/images/Q-pointlogo.png";
 import BorderAnimation from "../video/BorderAnimation.tsx";
 import { useInView } from "react-intersection-observer";
-
 import ArrowAnimation from "../video/ArrowAnimation.MP4";
 import DummyVideo from "../video/DummyVideo.tsx";
-import PictureMe from "./PictureMe.tsx";
+// import PictureMe from "./PictureMe.tsx";
+import CV from "../../../public/Arnold Jorg M CV.docx";
+
+// always check what branch I am in - dev or master - do not merge until I know (or commmit)
 
 const AboutSection = ({ onInViewChange }) => {
   const { ref, inView } = useInView({
@@ -78,8 +79,8 @@ const AboutSection = ({ onInViewChange }) => {
               <div className="phone:grid phone:grid-cols-3 phone:gap-2 lg:flex lg:space-x-4 lg:justify-start flex-row phone:my-4 lg:my-8 sm:w-[500px]">
                 <GradientButton
                   name="CV/Resume"
-                  link="https://read.cv/arnoldjorgm"
-                  // download="Arnold_Mobio_CV.docx"
+                  link="./Arnold Jorg M CV.docx"
+                  download="Arnold_Mobio_CV.docx"
                   // commented download out as a link is more accessible as not everybody will have word to view the file.
                   uploadIcon={true}
                 />
@@ -102,19 +103,20 @@ const AboutSection = ({ onInViewChange }) => {
             </div>
           </div>
           <div className="relative w-full h-full items-center justify-center phone:order-1 lg:order-2 phone:mb-10 ">
-            {/* <BorderAnimation /> */}
-            {/* <VideoPlayer />  */}
+            <BorderAnimation />
+            <VideoPlayer />
             {/* <DummyVideo /> */}
 
-            <PictureMe />
-            {/* <video
+            {/* <PictureMe /> */}
+            <video
               src={ArrowAnimation}
               autoPlay
-              // loop
+              loop
               muted
               playsInline
               className="  grayscale z-5 lg:w-[12vw] lg:h-[12vw] sm:w-[24vw] sm:h-[24vw] phone:w-[20vw] phone:h-[20vw] lg:rotate-90 phone:rotate-160 absolute min-[1375px]:top-[calc(50%+19vw)] min-[1375px]:left-[37%] transform -translate-x-1/2 lg:top-[calc(50%+20vw)] lg:left-[40%] sm:max-[1375px]:top-[calc(0%+1vw)] phone:top-[calc(10%+1vw)] sm:max-[1375px]:left-[27%] phone:max-[1375px]:left-[28%] "
-            /> */}
+              // add here the px where the arrow should move away from the text - range should be 1024-1175 px
+            />
             <h2 className="z-5  text-white rotate-315  absolute lg:top-[calc(50%+18vw)] lg:left-[27%] phone:top-[10%] phone:left-[12%] transform -translate-x-1/2 font-Caveat  phone:text-lg sm:text-2xl opacity-75">
               Let me <br /> introduce <br /> myself
             </h2>

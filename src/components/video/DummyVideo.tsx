@@ -17,7 +17,7 @@ const DummyVideo = () => {
   };
 
   return (
-    <div className="phone:items-center z-20 inset-x-1/3 phone:justify-center phone:m-auto lg:absolute phone:w-[30vw] phone:h-[30vw] lg:w-[25vw] lg:h-[25vw]  rounded-full  pointer-events-auto object-contain overflow-hidden">
+    <div className=" phone:items-center  inset-x-1/3 phone:justify-center phone:m-auto lg:absolute phone:w-[30vw] phone:h-[30vw] lg:w-[25vw] lg:h-[25vw]  rounded-full  pointer-events-auto object-contain overflow-hidden">
       {/* Video Element */}
       <video
         ref={videoRef}
@@ -32,8 +32,8 @@ const DummyVideo = () => {
       {/* Custom Play Button */}
       <button
         onClick={handlePlayPause}
-        className={`absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center justify-center bg-white text-black rounded-full p-4 shadow-md hover:bg-gray-300 transition active:bg-opacity-50 ${
-          isPlaying ? "bg-opacity-25" : "bg-opacity-100"
+        className={`absolute z-50 bottom-2 left-1/2 -translate-x-1/2 flex items-center justify-center opacity-50 bg-slate-100 text-black rounded-full p-2.5 shadow-md hover:bg-slate-200 transition ${
+          isPlaying ? "bg-opacity-10" : "bg-opacity-100"
         }`}
       >
         {isPlaying ? (
@@ -43,7 +43,7 @@ const DummyVideo = () => {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-8 h-8"
             aria-label="Pause button icon"
           >
             <path
@@ -59,7 +59,7 @@ const DummyVideo = () => {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-6 h-6 "
+            className="w-8 h-8"
             aria-label="Play button icon"
           >
             <path

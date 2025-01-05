@@ -35,7 +35,7 @@ const NavigationBar = ({ activeSection }) => {
               : "text-white opacity-60 hover:opacity-100"
           }
         >
-          More Projects
+          More
         </a>
       </nav>
     </div>
