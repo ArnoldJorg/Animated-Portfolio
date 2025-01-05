@@ -5,7 +5,6 @@ import QpointLogo from "../../assets/images/Q-pointlogo.png";
 import BorderAnimation from "../video/BorderAnimation.tsx";
 import { useInView } from "react-intersection-observer";
 import ArrowAnimation from "../video/ArrowAnimation.MP4";
-import DummyVideo from "../video/DummyVideo.tsx";
 // import PictureMe from "./PictureMe.tsx";
 import CV from "../../../public/Arnold Jorg M CV.docx";
 
