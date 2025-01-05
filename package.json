@@ -4,7 +4,6 @@
   "homepage": "https://arnoldjorg.github.io/Animated-Portfolio/",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://arnoldjorg.github.io/My-Portfolio/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

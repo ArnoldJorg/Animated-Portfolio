@@ -83,7 +83,7 @@ const MoreSection = ({ onInViewChange }) => {
             projectName: "Creative CV",
             textColor: "text-zinc-900",
             hoverText: "Click here to check out our project on Github!",
-            hyperlink: "https://github.com/ArnoldJorg/My-Portfolio",
+            hyperlink: "https://arnoldjorg.github.io/Animated-Portfolio/",
           },
           {
             url: NotePad,
