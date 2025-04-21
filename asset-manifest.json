@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/Animated-Portfolio/static/css/main.930118ba.css",
-    "main.js": "/Animated-Portfolio/static/js/main.09903a22.js",
+    "main.css": "/Animated-Portfolio/static/css/main.0bfbb01d.css",
+    "main.js": "/Animated-Portfolio/static/js/main.22c08f40.js",
     "static/js/453.44ee00e7.chunk.js": "/Animated-Portfolio/static/js/453.44ee00e7.chunk.js",
     "static/media/ArrowAnimation.MP4": "/Animated-Portfolio/static/media/ArrowAnimation.11589e98108c1bac746b.MP4",
-    "static/media/note-pad.jpg": "/Animated-Portfolio/static/media/note-pad.9469aeabd0021279664b.jpg",
     "static/media/finsta-profilepage.png": "/Animated-Portfolio/static/media/finsta-profilepage.53ace2530a573a985d7d.png",
     "static/media/Finsta-Call.png": "/Animated-Portfolio/static/media/Finsta-Call.359ec2b45be2a89f0244.png",
     "static/media/Q-point-all-devices.png": "/Animated-Portfolio/static/media/Q-point-all-devices.ed960e37a85f9050a8c6.png",
@@ -13,23 +12,29 @@
     "static/media/Inter-Bold.ttf": "/Animated-Portfolio/static/media/Inter-Bold.6ddedd9ac326bf6ee3ea.ttf",
     "static/media/Inter-Regular.ttf": "/Animated-Portfolio/static/media/Inter-Regular.fd012577d3f8e88a8149.ttf",
     "static/media/Caveat-Medium.ttf": "/Animated-Portfolio/static/media/Caveat-Medium.a661a40777402bb8c6ff.ttf",
-    "static/media/portfolio-picture.png": "/Animated-Portfolio/static/media/portfolio-picture.0c7140d526ba9ec49782.png",
     "static/media/Roboto-Bold.ttf": "/Animated-Portfolio/static/media/Roboto-Bold.d50a80138ec4f2fb5e9f.ttf",
-    "static/media/postgresql-logo.png": "/Animated-Portfolio/static/media/postgresql-logo.467c3a83ac6939dcb17d.png",
-    "static/media/react-native-logo.png": "/Animated-Portfolio/static/media/react-native-logo.2994b6282da83afbfaf0.png",
-    "static/media/node-js-logo.png": "/Animated-Portfolio/static/media/node-js-logo.36c630c20c51b6ee746b.png",
+    "static/media/ScikitLearnLogo.png": "/Animated-Portfolio/static/media/ScikitLearnLogo.7c81e0aa80c1924e4e7b.png",
+    "static/media/PythonLogo.png": "/Animated-Portfolio/static/media/PythonLogo.d3fc9717009bf619e98c.png",
+    "static/media/MatplotlibLogo.png": "/Animated-Portfolio/static/media/MatplotlibLogo.dce83a1d2d78bd9f4887.png",
     "static/media/tailwind-logo.png": "/Animated-Portfolio/static/media/tailwind-logo.479d7a8b4dc069959b65.png",
     "static/media/chalk-border.png": "/Animated-Portfolio/static/media/chalk-border.bd141e602f42ec35146a.png",
     "static/media/Q-pointlogo.png": "/Animated-Portfolio/static/media/Q-pointlogo.fd563980f817e959c0b8.png",
-    "static/media/axios-logo.png": "/Animated-Portfolio/static/media/axios-logo.719a303d970691328f07.png",
+    "static/media/NLTK.png": "/Animated-Portfolio/static/media/NLTK.86f8abc4aa0c0f5c7098.png",
+    "static/media/PlotlyLogo.png": "/Animated-Portfolio/static/media/PlotlyLogo.1c789b8a52d0382b0c83.png",
+    "static/media/TensorflowLogo.png": "/Animated-Portfolio/static/media/TensorflowLogo.3f80ffeaafb5e1cb71b2.png",
+    "static/media/PandasLogo.png": "/Animated-Portfolio/static/media/PandasLogo.fdffbb48849f825b4db0.png",
+    "static/media/TorchLogo.png": "/Animated-Portfolio/static/media/TorchLogo.526217b817e7f074086f.png",
+    "static/media/NumpyLogo.png": "/Animated-Portfolio/static/media/NumpyLogo.18a54c8c372e83bd4577.png",
     "static/media/JavaScript-logo.png": "/Animated-Portfolio/static/media/JavaScript-logo.3ade557547ee3603cbf9.png",
+    "static/media/HuggingFaceLogo.png": "/Animated-Portfolio/static/media/HuggingFaceLogo.99ba7eec0f62b7440492.png",
+    "static/media/GithubLogo.png": "/Animated-Portfolio/static/media/GithubLogo.fc816db5cff6efebaae5.png",
     "index.html": "/Animated-Portfolio/index.html",
-    "main.930118ba.css.map": "/Animated-Portfolio/static/css/main.930118ba.css.map",
-    "main.09903a22.js.map": "/Animated-Portfolio/static/js/main.09903a22.js.map",
+    "main.0bfbb01d.css.map": "/Animated-Portfolio/static/css/main.0bfbb01d.css.map",
+    "main.22c08f40.js.map": "/Animated-Portfolio/static/js/main.22c08f40.js.map",
     "453.44ee00e7.chunk.js.map": "/Animated-Portfolio/static/js/453.44ee00e7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.930118ba.css",
-    "static/js/main.09903a22.js"
+    "static/css/main.0bfbb01d.css",
+    "static/js/main.22c08f40.js"
   ]
 }
