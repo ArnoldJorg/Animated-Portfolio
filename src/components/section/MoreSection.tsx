@@ -12,6 +12,17 @@ import NotePad from "../../assets/images/note-pad.jpg";
 import PortfolioImage from "../../assets/images/portfolio-picture.png";
 import Projects from "../Projects.tsx";
 import ProjectDetails from "../ProjectDetails.tsx";
+import TorchLogo from "../../assets/images/TorchLogo.png";
+import TensorflowLogo from "../../assets/images/TensorflowLogo.png";
+import ScikitLearnLogo from "../../assets/images/ScikitLearnLogo.png";
+import PythonLogo from "../../assets/images/PythonLogo.png";
+import PlotlyLogo from "../../assets/images/PlotlyLogo.png";
+import PandasLogo from "../../assets/images/PandasLogo.png";
+import NumpyLogo from "../../assets/images/NumpyLogo.png";
+import Nltk from "../../assets/images/NLTK.png";
+import MatplotLibLogo from "../../assets/images/MatplotlibLogo.png";
+import HuggingFaceLogo from "../../assets/images/HuggingFaceLogo.png";
+import GPTLogo from ",,/../assets/images/GPTLogo.png";
 
 const MoreSection = ({ onInViewChange }) => {
   const { ref, inView } = useInView({
@@ -36,7 +47,7 @@ const MoreSection = ({ onInViewChange }) => {
         <div className="w-full pt-[8vh] flex flex-col  items-center">
           <ProjectDetails
             name="My Portfolio"
-            range="2024-now"
+            range="2024 Sept - Dec"
             icons={[
               { url: ReactLogo, alt: "React Logo" },
               { url: JavascriptLogo, alt: "JavaScript Logo" },
@@ -45,37 +56,61 @@ const MoreSection = ({ onInViewChange }) => {
           />
 
           <ProjectDetails
-            name="Note Taking App"
-            range="2024-now"
+            name="Data Science"
+            range="2024 Dec - Jan"
             icons={[
-              { url: NativeLogo, alt: "React Native Logo" },
-              { url: JavascriptLogo, alt: "JavaScript Logo" },
-              { url: TailwindLogo, alt: "Tailwind CSS Logo" },
+              { url: PythonLogo, alt: "Python Logo" },
+              { url: PandasLogo, alt: "Pandas Logo" },
+              { url: NumpyLogo, alt: "Numpy Logo" },
+            ]}
+          />
+          <ProjectDetails
+            name="Creative NLP"
+            range="2025 Jan - Apr"
+            icons={[
+              { url: PythonLogo, alt: "Python Logo" },
+              { url: PandasLogo, alt: "Pandas Logo" },
+              { url: NumpyLogo, alt: "Numpy Logo" },
               {
-                url: GraphqlLogo,
-                alt: "GraphQL Logo",
+                url: Nltk,
+                alt: "NLTK Logo",
                 extraClasses: "rounded-sm",
               },
               {
-                url: PostgresLogo,
-                alt: "PostgreSQL Logo",
+                url: ScikitLearnLogo,
+                alt: "Scikit-Learn Logo",
                 extraClasses: "bg-white",
               },
               {
-                url: NodeLogo,
-                alt: "Node.js Logo",
+                url: MatplotLibLogo,
+                alt: "MatplotLib Logo",
                 extraClasses: "bg-white  min-h-[25] min-w-[25]",
               },
               {
-                url: AxiosLogo,
-                alt: "Axios Logo",
+                url: PlotlyLogo,
+                alt: "PlotlyLogo Logo",
+                extraClasses: "bg-white   min-h-[25] min-w-[25] ",
+              },
+              {
+                url: TorchLogo,
+                alt: "Torch Logo",
+                extraClasses: "bg-white   min-h-[25] min-w-[25] ",
+              },
+              {
+                url: TensorflowLogo,
+                alt: "Tensorflow Logo",
+                extraClasses: "bg-white   min-h-[25] min-w-[25] ",
+              },
+              {
+                url: HuggingFaceLogo,
+                alt: "HuggingFace Logo",
                 extraClasses: "bg-white   min-h-[25] min-w-[25] ",
               },
             ]}
           />
         </div>
       </div>
-      <Projects
+      {/* <Projects
         images={[
           {
             url: PortfolioImage,
@@ -94,7 +129,7 @@ const MoreSection = ({ onInViewChange }) => {
             // hoverText: "Click here to check out our project on Github!",
           },
         ]}
-      />
+      /> */}
     </div>
   );
 };

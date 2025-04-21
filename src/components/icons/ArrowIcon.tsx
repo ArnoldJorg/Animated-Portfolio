@@ -1,6 +1,6 @@
 import React from "react";
 
-const ArrowIcon = () => {
+const ArrowIcon = ({ size }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,7 +8,7 @@ const ArrowIcon = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="size-3 flex "
+      className={size || "size-3 flex "}
       aria-label="arrow-icon"
     >
       <path
@@ -20,4 +20,5 @@ const ArrowIcon = () => {
   );
 };
 
+// "size-3 flex "
 export default ArrowIcon;

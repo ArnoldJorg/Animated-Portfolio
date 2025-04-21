@@ -8,7 +8,7 @@ const VideoPlayer = () => {
       // width="100"
       // height="100"
       // alt="react-image"
-      src="https://www.youtube.com/embed/fdLh5pg0nG0"
+      src="https://www.youtube.com/embed/BwPo9XGWpFM"
       title="YouTube video"
       frameBorder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

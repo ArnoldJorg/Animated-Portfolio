@@ -48,41 +48,60 @@ const AboutSection = ({ onInViewChange }) => {
               <p className=" w-full break-words text-xl text-custom-white font-custom">
                 <span className="opacity-75">
                   {" "}
-                  Hello there! My name is Arnold, and I’m a{" "}
-                </span>{" "}
-                <span className="font-Roboto">Front-End Developer</span>
-                <span className="opacity-75">
-                  , with a passion for crafting intuitive and responsive web
-                  applications. <br /> <br /> I’ve always been fascinated by
-                  technology and how it shapes the way we interact with the
-                  world, which inspired me to dive deep into software
-                  development. In my journey so far, I’ve built and optimized
-                  user interfaces using tools like{" "}
+                  Hello there! My name is Arnold, and I’m a developer who enjoys
+                  building seamless user experiences and smart, data-driven
+                  systems.
                 </span>
-                <span className="font-Roboto">React</span>,
-                <span className="font-Roboto">Typescript</span>, and{" "}
-                <span className="font-Roboto">Tailwind</span>{" "}
+                <br />
+                <br />
+                <span className="opacity-75"> With a background in both</span>
+                <span className="font-Roboto"> front-end development</span>
+                <span className="opacity-75"> and</span>
+                <span className="font-Roboto"> data science</span>
                 <span className="opacity-75">
-                  , collaborated on backend systems with{" "}
+                  , I bring together design and logic to create applications
+                  that are both beautiful and functional. I’ve worked with
                 </span>
-                <span className="font-Roboto">Node.js </span> and{" "}
-                <span className="font-Roboto">Prisma</span>
+                <span className="font-Roboto"> React, TypeScript </span>
+                <span className="opacity-75">and</span>
+                <span className="font-Roboto"> Tailwind </span>
                 <span className="opacity-75">
-                  , and worked with teams to deliver scalable and impactful
-                  solutions. Whether it’s translating designs into seamless user
-                  experiences or solving complex problems, I love turning ideas
-                  into reality.
+                  to craft responsive interfaces, and I’ve also built backend
+                  services using
+                </span>
+
+                <span className="font-Roboto"> Node.js </span>
+
+                <span className="opacity-75"> and </span>
+                <span className="font-Roboto"> Python </span>
+
+                <span className="opacity-75">
+                  . Along the way, I’ve explored
+                </span>
+                <span className="font-Roboto">
+                  &nbsp; natural language processing, &nbsp;
+                </span>
+                <span className="font-Roboto">
+                  trained classification models,
+                </span>
+                <span className="opacity-75">and designed</span>
+                <span className="font-Roboto"> data pipelines </span>
+                <span className="opacity-75">
+                  to support real-time features and recommendations. Whether
+                  it’s designing an intuitive UI or solving complex data
+                  problems, I love turning ideas into impactful digital
+                  experiences.
                 </span>
               </p>
               <div></div>
               <div className="phone:grid phone:grid-cols-3 phone:gap-2 lg:flex lg:space-x-4 lg:justify-start flex-row phone:my-4 lg:my-8 sm:w-[500px]">
-                <GradientButton
+                {/* <GradientButton
                   name="CV/Resume"
                   link="./Arnold Jorg M CV.docx"
                   download="Arnold_Mobio_CV.docx"
                   // commented download out as a link is more accessible as not everybody will have word to view the file.
                   uploadIcon={true}
-                />
+                /> */}
                 <GradientButton
                   name="LinkedIn"
                   link="https://www.linkedin.com/in/arnold-j%C3%B6rg-m/"

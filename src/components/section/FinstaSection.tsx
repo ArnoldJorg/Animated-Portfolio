@@ -31,7 +31,7 @@ const FinstaSection = () => {
             <h1 className="text-3xl font-Roboto"> Finsta Chat App</h1>
           </div>
           <div className="rounded-full bg-black border-2 items-center border-custom-grey-3 lg:justify-end px-3 p-1 ">
-            <p className="text-xs">2023-2024</p>
+            <p className="text-xs">2023-now</p>
           </div>
         </div>
         <p className=" w-full break-words text-xl text-custom-white pt-[2vw] font-custom opacity-75">
@@ -89,22 +89,31 @@ const FinstaSection = () => {
           Complex Features and Seamless User Experiences
         </h1>
         <p className="flex  w-full break-words text-lg text-custom-white font-custom opacity-80">
-          One of the most rewarding aspects of my work has been implementing
-          advanced app features that integrate front-end responsiveness with
-          robust backend functionality. For example, I developed a Call Feature
-          where users can seamlessly initiate and manage calls directly within
-          the app, powered by WebRTC for real-time communication. On the
-          backend, Node.js and Express handle authentication and session
-          management, while PostgreSQL ensures reliable logging of call
-          histories. <br /> <br /> Additionally, I created a Like Feature that
-          allows users to like photos with an optional payment system. This
-          includes integration with Stripe for secure transactions, dynamic data
-          updates using GraphQL, and responsive UI elements styled with Tailwind
-          CSS. User profiles, including biographies and stats, are displayed via
+          Built features like the in-app Call System (powered by WebRTC) and a
+          dynamic Like system with Stripe integration. Handled backend logic
+          using Express and ensured smooth data flow between services and UI
+          components.
+          <br /> <br /> Additionally, I created a Like Feature that allows users
+          to like photos with an optional payment system. This includes
+          integration with Stripe for secure transactions, dynamic data updates
+          using GraphQL, and responsive UI elements styled with Tailwind CSS.
+          User profiles, including biographies and stats, are displayed via
           optimized API queries, ensuring smooth real-time updates. <br />{" "}
           <br /> These features highlight my ability to handle complex data
           flows and craft user-centric designs that combine functionality with
           an exceptional user experience.
+        </p>
+      </div>
+      <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] flex-col ">
+        <h1 className="flex w-full break-words text-2xl text-custom-white font-Roboto justify-center pt-[3vh] pb-[2.5vh] opacity-95">
+          Explore Page and advanced algorithms
+        </h1>
+        <p className="flex  w-full break-words text-lg text-custom-white font-custom opacity-80">
+          To improve user discovery, I proposed and prototyped a lightweight
+          scoring algorithm for the Explore Page, ranking users based on
+          engagement metrics (e.g. like count, conversion rates). This laid the
+          groundwork for future classification logic or ML-based
+          recommendations.
         </p>
       </div>
       <div className="flex lg:w-[30%]  phone:w-[60%] flex-row justify-center space-x-6 m-10 ">
