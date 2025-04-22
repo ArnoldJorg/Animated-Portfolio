@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
 .crop-container {
   clip-path: inset(0 0 0 0); /* Crops 3px from the right */
 }
@@ -107,3 +112,4 @@ html,
 body {
   overscroll-behavior: none; /* Prevent the bounce effect */
 }
+

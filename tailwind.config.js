@@ -9,9 +9,15 @@ module.exports = {
             transform: "rotate(-360deg)",
           },
         },
+
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
       },
       animation: {
         "border-spin": "border-spin 7s linear infinite",
+        "loop-scroll": "loop-scroll 12s linear infinite",
       },
       colors: {
         "custom-purple": "rgba(192, 132, 252, 0.4)",
