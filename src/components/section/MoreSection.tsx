@@ -20,11 +20,10 @@ import PlotlyLogo from "../../assets/images/PlotlyLogo.png";
 import PandasLogo from "../../assets/images/PandasLogo.png";
 import NumpyLogo from "../../assets/images/NumpyLogo.png";
 import NltkLogo from "../../assets/images/NLTK.png";
-// fff
 import MatplotLibLogo from "../../assets/images/MatplotlibLogo.png";
 import HuggingFaceLogo from "../../assets/images/HuggingFaceLogo.png";
-import GPTLogo from "../../assets/images/GPTLogo.png";
-import TypescriptLogo from "../../assets/images/GPTLogo.png";
+import TypescriptLogo from "../../assets/images/TypescriptLogo.png";
+import Techstack from "./Techstack.tsx";
 
 const MoreSection = ({ onInViewChange }) => {
   const { ref, inView } = useInView({
@@ -53,6 +52,7 @@ const MoreSection = ({ onInViewChange }) => {
             icons={[
               { url: ReactLogo, alt: "React Logo" },
               { url: JavascriptLogo, alt: "JavaScript Logo" },
+              { url: TypescriptLogo, alt: "Typescript Logo" },
               { url: TailwindLogo, alt: "Tailwind CSS Logo" },
             ]}
           />
@@ -64,6 +64,16 @@ const MoreSection = ({ onInViewChange }) => {
               { url: PythonLogo, alt: "Python Logo" },
               { url: PandasLogo, alt: "Pandas Logo" },
               { url: NumpyLogo, alt: "Numpy Logo" },
+              {
+                url: MatplotLibLogo,
+                alt: "MatplotLib Logo",
+                // extraClasses: "bg-white  min-h-[25] min-w-[25]",
+              },
+              {
+                url: PlotlyLogo,
+                alt: "PlotlyLogo Logo",
+                // extraClasses: "bg-white   min-h-[25] min-w-[25] ",
+              },
             ]}
           />
           <ProjectDetails
@@ -81,32 +91,23 @@ const MoreSection = ({ onInViewChange }) => {
               {
                 url: ScikitLearnLogo,
                 alt: "Scikit-Learn Logo",
-                extraClasses: "bg-white",
+                // extraClasses: "bg-white",
               },
-              {
-                url: MatplotLibLogo,
-                alt: "MatplotLib Logo",
-                extraClasses: "bg-white  min-h-[25] min-w-[25]",
-              },
-              {
-                url: PlotlyLogo,
-                alt: "PlotlyLogo Logo",
-                extraClasses: "bg-white   min-h-[25] min-w-[25] ",
-              },
+
               {
                 url: TorchLogo,
                 alt: "Torch Logo",
-                extraClasses: "bg-white   min-h-[25] min-w-[25] ",
+                // extraClasses: "bg-white   min-h-[25] min-w-[25] ",
               },
               {
                 url: TensorflowLogo,
                 alt: "Tensorflow Logo",
-                extraClasses: "bg-white   min-h-[25] min-w-[25] ",
+                // extraClasses: "bg-white   min-h-[25] min-w-[25] ",
               },
               {
                 url: HuggingFaceLogo,
                 alt: "HuggingFace Logo",
-                extraClasses: "bg-white   min-h-[25] min-w-[25] ",
+                // extraClasses: "bg-white   min-h-[25] min-w-[25] ",
               },
             ]}
           />
@@ -133,195 +134,7 @@ const MoreSection = ({ onInViewChange }) => {
         ]}
       /> */}
 
-      <div className="flex overflow-hidden group">
-        {/* first div */}
-        <div className=" h-48 border-blue-500 w-screen flex flex-row items-center gap-x-8 justify-center animate-loop-scroll pl-8 group-hover:paused">
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1   ">
-              <img
-                src={JavascriptLogo}
-                className="h-24 w-24 p-4 hover:animate-pulse"
-              />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={ReactLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={TailwindLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={NodeLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={TypescriptLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={PandasLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={NumpyLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={TensorflowLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={PostgresLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={TorchLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={ScikitLearnLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-        </div>
-        {/* second div */}
-        <div className=" h-48 border-blue-500 w-screen flex flex-row items-center gap-x-8 justify-center animate-loop-scroll pl-8 group-hover:paused">
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img
-                src={JavascriptLogo}
-                className="h-24 w-24 p-4 hover:animate-pulse"
-              />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={ReactLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={TailwindLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={NodeLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={TypescriptLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={PandasLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={NumpyLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={TensorflowLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={PostgresLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={TorchLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={ScikitLearnLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-        </div>
-        {/* third */}
-
-        <div className=" h-48 border-blue-500 w-screen flex flex-row items-center gap-x-8 justify-center animate-loop-scroll pl-8 group-hover:paused">
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img
-                src={JavascriptLogo}
-                className="h-24 w-24 p-4 hover:animate-pulse "
-              />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={ReactLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={TailwindLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={NodeLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={TypescriptLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={PandasLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={NumpyLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={TensorflowLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={PostgresLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={TorchLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-
-          <div className="card-wrapper h-32 w-32 flex ">
-            <div className="card-content flex items-center justify-center text-xs flex-row space-x-1">
-              <img src={ScikitLearnLogo} className="h-24 w-24 p-4 " />
-            </div>
-          </div>
-        </div>
-      </div>
+      <Techstack />
     </div>
   );
 };

@@ -6,7 +6,6 @@ import BorderAnimation from "../video/BorderAnimation.tsx";
 import { useInView } from "react-intersection-observer";
 import ArrowAnimation from "../video/ArrowAnimation.MP4";
 // import PictureMe from "./PictureMe.tsx";
-import CV from "../../../public/Arnold Jorg M CV.docx";
 
 // always check what branch I am in - dev or master - do not merge until I know (or commmit)
 
@@ -85,7 +84,6 @@ const AboutSection = ({ onInViewChange }) => {
                   trained classification models,
                 </span>
                 <span className="opacity-75">and designed</span>
-                <span className="font-Roboto"> data pipelines </span>
                 <span className="opacity-75">
                   to support real-time features and recommendations. Whether
                   it’s designing an intuitive UI or solving complex data
