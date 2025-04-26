@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import FinstaSection from "./FinstaSection.tsx";
 import QpointSection from "./QpointSection.tsx";
+import StickyHeader from "./StickyHeader.tsx";
 
 const WorkSection = ({ onInViewChange }) => {
   const { ref, inView } = useInView({
@@ -17,7 +18,7 @@ const WorkSection = ({ onInViewChange }) => {
     <div
       ref={ref}
       id="work-section"
-      className=" text-white flex flex-col  w-screen mx-auto items-center"
+      className=" text-white flex flex-col  w-screen mx-auto items-center "
     >
       <FinstaSection />
       <QpointSection />

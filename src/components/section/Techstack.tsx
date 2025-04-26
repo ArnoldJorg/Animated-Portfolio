@@ -14,7 +14,7 @@ import ScrollAnimation from "./ScrollAnimation.tsx";
 
 const Techstack = () => {
   return (
-    <div className="flex overflow-hidden group">
+    <div className="flex group">
       {/* first div */}
       <ScrollAnimation
         icons={[

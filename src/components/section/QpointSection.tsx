@@ -1,30 +1,21 @@
 import React from "react";
 import QpointDevices from "../../assets/images/Q-point-all-devices.png";
 import QpointLogo from "../../assets/images/Q-pointlogo.png";
+import StickyHeader from "./StickyHeader.tsx";
+import { useInView } from "react-intersection-observer";
+import { useState, useEffect } from "react";
 
 const QpointSection = () => {
   return (
-    <div className="flex flex-col w-screem mx-auto items-center ">
+    <div className="flex flex-col w-screen mx-auto items-center pb-[4vw]">
+      <StickyHeader
+        title="Q-point Systems"
+        alt="Q point logo"
+        logo={QpointLogo}
+        year="2022-2023"
+        // isSticky={Sticky}
+      />
       <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] flex-col justify-center">
-        {/* section i am editing */}
-        <div
-          id="work-title-2"
-          className="flex phone:flex-col lg:flex-row items-center sm:space-y-1 lg:justify-between py-[1vw] rounded-md"
-        >
-          <div className="flex items-center space-x-3">
-            <img
-              src={QpointLogo}
-              width="50"
-              height="50"
-              className=" rounded-xl "
-              alt="qpoint-logo"
-            />{" "}
-            <h2 className="text-3xl font-Roboto"> Q-point Systems</h2>
-          </div>
-          <div className="rounded-full bg-black items-center border-custom-grey-3 lg:justify-end border-2 px-3 p-1  ">
-            <p className="text-xs">2022-2023</p>
-          </div>
-        </div>
         <p className=" w-full break-words text-xl text-custom-white pt-[2vw]">
           <span className="font-custom opacity-80">
             Contributed to the development of the admin panel for a{" "}

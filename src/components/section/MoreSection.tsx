@@ -24,6 +24,8 @@ import MatplotLibLogo from "../../assets/images/MatplotlibLogo.png";
 import HuggingFaceLogo from "../../assets/images/HuggingFaceLogo.png";
 import TypescriptLogo from "../../assets/images/TypescriptLogo.png";
 import Techstack from "./Techstack.tsx";
+import TinkeringSection from "./TinkeringSection.tsx";
+import StickyHeader from "./StickyHeader.tsx";
 
 const MoreSection = ({ onInViewChange }) => {
   const { ref, inView } = useInView({
@@ -37,15 +39,11 @@ const MoreSection = ({ onInViewChange }) => {
     <div
       ref={ref}
       id="more-section"
-      className="p-16 space-y-16 flex flex-col w-screen items-center "
+      className="flex flex-col w-screen items-center pb-[4vw]"
     >
+      <StickyHeader title="Projects and Further Learning " year="ongoing" />
       <div className="flex lg:w-[50%] sm:w-[60%] flex-col justify-center ">
-        <div className="flex  phone:flex-col lg:flex-row  sm:space-y-3 items-center text-center ">
-          <h1 className="text-2xl text-white font-Roboto ">
-            Personal Projects & Further Learning
-          </h1>
-        </div>
-        <div className="w-full pt-[8vh] flex flex-col  items-center">
+        <div className=" pt-[8vh] flex flex-col  items-center ">
           <ProjectDetails
             name="My Portfolio"
             range="2024 Sept - Dec"
@@ -133,8 +131,11 @@ const MoreSection = ({ onInViewChange }) => {
           },
         ]}
       /> */}
+      <TinkeringSection />
 
-      <Techstack />
+      <div className="w-screen overflow-x-hidden">
+        <Techstack />
+      </div>
     </div>
   );
 };

@@ -13,8 +13,8 @@ function App() {
   };
 
   return (
-    <div className=" bg-black overflow-y-auto ">
-      <div className="z-10  w-screen bottom-6 flex items-center justify-center fixed ">
+    <div className=" bg-black  w-screen">
+      <div className="z-30  w-screen bottom-6 flex items-center justify-center fixed ">
         <NavigationBar activeSection={activeSection} />
       </div>
       <AboutSection onInViewChange={handleInViewChange} />

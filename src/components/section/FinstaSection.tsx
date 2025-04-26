@@ -4,36 +4,23 @@ import FinstaPage from "../../assets/images/finsta-profilepage.png";
 import FinstaPhone from "../../assets/images/finsta-iphone-picture-1.png";
 import Logo4 from "../../assets/images/Finsta-lady.png";
 import Logo5 from "../../assets/images/Finsta-Call.png";
-
+import { useRef } from "react";
+import { useInView } from "react-intersection-observer";
+import { useState, useEffect } from "react";
+import StickyHeader from "./StickyHeader.tsx";
 const FinstaSection = () => {
   return (
-    <div className="flex flex-col w-screen mx-auto items-center pb-[4vw] ">
+    <div className="flex flex-col w-screen mx-auto items-center pb-[4vw]">
       {/* Spacer for fixed header */}
+      {/* <div ref={ref} className="h-1" /> */}
 
-      <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] flex-col justify-center">
-        <div
-          id="work-title"
-          className="flex phone:flex-col lg:flex-row items-center sm:space-y-1 lg:justify-between py-[1vw] rounded-md"
-          //   ${
-          //   isSticky
-          //     ? " fixed lg:w-[50%] phone:max-lg:w-[100%] phone:max-lg:inset-x-0 shadow-black shadow-[0px_18px_14px] phone:w-[90%] top-0 translate-y-0 z-10  bg-black transition-transform duration-500 "
-          //     : " -translate-y-10"
-          // }`}
-        >
-          <div className="flex items-center space-x-3">
-            <img
-              src={FinstaLogo}
-              width="50"
-              height="50"
-              className=" rounded-xl"
-              alt="finsta-logo"
-            />{" "}
-            <h1 className="text-3xl font-Roboto"> Finsta Chat App</h1>
-          </div>
-          <div className="rounded-full bg-black border-2 items-center border-custom-grey-3 lg:justify-end px-3 p-1 ">
-            <p className="text-xs">2023-now</p>
-          </div>
-        </div>
+      <StickyHeader
+        logo={FinstaLogo}
+        year="2023-now"
+        title="Finsta App"
+        alt="finsta-dating-app"
+      />
+      <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] justify-center">
         <p className=" w-full break-words text-xl text-custom-white pt-[2vw] font-custom opacity-75">
           A dating app developed for a client of Solutionize, where users set
           message rates and charge per interaction. I contributed to the

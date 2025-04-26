@@ -10,6 +10,17 @@ module.exports = {
           },
         },
 
+        "bounce-once": {
+          "0%, 100%": {
+            transform: "translateY(0)",
+            animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)",
+          },
+          "50%": {
+            transform: "translateY(-25%)",
+            animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)",
+          },
+        },
+
         "loop-scroll": {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(-100%)" },
@@ -18,7 +29,9 @@ module.exports = {
       animation: {
         "border-spin": "border-spin 7s linear infinite",
         "loop-scroll": "loop-scroll 12s linear infinite",
+        "bounce-once": "bounce-once 2s ease-out",
       },
+
       colors: {
         "custom-purple": "rgba(192, 132, 252, 0.4)",
         "custom-grey": "rgba(120, 120, 120, 0.8)",
