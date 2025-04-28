@@ -5,6 +5,16 @@ import StickyHeader from "./StickyHeader.tsx";
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
 
+import JavascriptLogo from "../../assets/images/JavaScript-logo.png";
+import NativeLogo from "../../assets/images/react-native-logo.png";
+import ReactLogo from "../../assets/images/logo512.png";
+
+import ProjectDetails from "../ProjectDetails.tsx";
+import ScikitLearnLogo from "../../assets/images/ScikitLearnLogo.png";
+import PythonLogo from "../../assets/images/PythonLogo.png";
+import TypescriptLogo from "../../assets/images/TypescriptLogo.png";
+import AxiosLogo from "../../assets/images/axios-logo.png";
+
 const QpointSection = () => {
   return (
     <div className="flex flex-col w-screen mx-auto items-center pb-[4vw]">
@@ -14,6 +24,19 @@ const QpointSection = () => {
         logo={QpointLogo}
         year="2022-2023"
         // isSticky={Sticky}
+        techstack={[
+          {
+            url: NativeLogo,
+            alt: "React Native Logo",
+            extraClasses: "rounded-sm",
+          },
+          { url: TypescriptLogo, alt: "Typescript Logo" },
+          { url: JavascriptLogo, alt: "Javascript Logo" },
+          // {
+          //   url: AxiosLogo,
+          //   alt: "Axios Logo",
+          // },
+        ]}
       />
       <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] flex-col justify-center">
         <p className=" w-full break-words text-xl text-custom-white pt-[2vw]">
@@ -43,15 +66,17 @@ const QpointSection = () => {
           <span className="flex w-full break-words text-lg text-custom-white justify-center pt-[1vh] pb-[5vh] font-custom opacity-60">
             The User Customised Dashboard UI
           </span>
-          <span className="flex  w-full break-words text-lg text-custom-white font-custom opacity-80">
-            One of my key contributions was designing and building the Home Menu
-            page, displaying all food items with a user-friendly interface. I
-            conceptualized the layout using Adobe XD, aligning with our team’s
-            color scheme chosen through trial and improvement. This page
-            featured a dynamic banner at the top, adding visual appeal with a
-            moving image. I also added interactive buttons like “Order Now” and
-            quantity selectors for a streamlined ordering experience, creating a
-            smooth, engaging page tailored to high-traffic use.
+          <span className="flex  w-full break-words text-lg text-custom-white font-custom opacity-80 items-center">
+            • Designed and built the Home Menu page using React Native,
+            displaying food items with a dynamic and responsive layout.
+            <br />• Created a custom layout in Adobe XD, aligning with the
+            brand’s color palette and style guide.
+            <br />• Integrated an animated banner and interactive UI elements
+            like “Order Now” buttons and quantity selectors.
+            <br />• Enhanced user engagement with smooth animations and
+            intuitive interactions using React Native hooks.
+            <br /> • Optimized the page for high-traffic performance, focusing
+            on lightweight components and efficient state management.
           </span>
         </p>
       </div>

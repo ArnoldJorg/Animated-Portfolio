@@ -37,7 +37,7 @@ const ProjectDetails = ({ name, range, icons = [] }: ProjectProps) => {
   const gitHubLink = gitHubMap[name];
 
   return (
-    <div className="w-full py-6  text-white flex flex-row m-4 border-opacity-25 border-b border-white ">
+    <div className="w-full py-6  text-white flex flex-row m-4 border-opacity-25 border-b border-white">
       <p className="flex-1 ">
         <div className="flex flex-col">
           <div className="flex-1 flex-row">
@@ -60,7 +60,7 @@ const ProjectDetails = ({ name, range, icons = [] }: ProjectProps) => {
               <img
                 key={i}
                 src={icon.url}
-                className={`flex rounded-lg flex-shrink-0 ${
+                className={`flex rounded-lg flex-shrink-0 object-contain ${
                   icon.extraClasses || ""
                 }`}
                 alt={icon.alt}

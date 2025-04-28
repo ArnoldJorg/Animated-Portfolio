@@ -26,6 +26,7 @@ import TypescriptLogo from "../../assets/images/TypescriptLogo.png";
 import Techstack from "./Techstack.tsx";
 import TinkeringSection from "./TinkeringSection.tsx";
 import StickyHeader from "./StickyHeader.tsx";
+import SocialButtons from "./SocialButtons.tsx";
 
 const MoreSection = ({ onInViewChange }) => {
   const { ref, inView } = useInView({
@@ -42,7 +43,7 @@ const MoreSection = ({ onInViewChange }) => {
       className="flex flex-col w-screen items-center pb-[4vw]"
     >
       <StickyHeader title="Projects and Further Learning " year="ongoing" />
-      <div className="flex lg:w-[50%] sm:w-[60%] flex-col justify-center ">
+      <div className="flex lg:w-[50%] sm:w-[60%] phone: w-[90%] flex-col justify-center ">
         <div className=" pt-[8vh] flex flex-col  items-center ">
           <ProjectDetails
             name="My Portfolio"
@@ -95,7 +96,7 @@ const MoreSection = ({ onInViewChange }) => {
               {
                 url: TorchLogo,
                 alt: "Torch Logo",
-                // extraClasses: "bg-white   min-h-[25] min-w-[25] ",
+                extraClasses: "bg-gray-600 p-1 ",
               },
               {
                 url: TensorflowLogo,
@@ -136,6 +137,7 @@ const MoreSection = ({ onInViewChange }) => {
       <div className="w-screen overflow-x-hidden">
         <Techstack />
       </div>
+      <SocialButtons />
     </div>
   );
 };

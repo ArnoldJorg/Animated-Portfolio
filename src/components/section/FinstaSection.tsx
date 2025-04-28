@@ -4,10 +4,23 @@ import FinstaPage from "../../assets/images/finsta-profilepage.png";
 import FinstaPhone from "../../assets/images/finsta-iphone-picture-1.png";
 import Logo4 from "../../assets/images/Finsta-lady.png";
 import Logo5 from "../../assets/images/Finsta-Call.png";
-import { useRef } from "react";
-import { useInView } from "react-intersection-observer";
-import { useState, useEffect } from "react";
+// import { useRef } from "react";
+// import { useInView } from "react-intersection-observer";
+// import { useState, useEffect } from "react";
 import StickyHeader from "./StickyHeader.tsx";
+// import DashboardVideo from "../../assets/video/DashboardVideo.mp4";
+import DashboardVideo from "../video/DashboardVideo.mp4";
+// import JavascriptLogo from "../../assets/images/JavaScript-logo.png";
+import TailwindLogo from "../../assets/images/tailwind-logo.png";
+import GraphqlLogo from "../../assets/images/graphQL-logo.png";
+import NativeLogo from "../../assets/images/react-native-logo.png";
+import PostgresLogo from "../../assets/images/postgresql-logo.png";
+import NodeLogo from "../../assets/images/node-js-logo.png";
+import ReactLogo from "../../assets/images/logo512.png";
+import ProjectDetails from "../ProjectDetails.tsx";
+import PythonLogo from "../../assets/images/PythonLogo.png";
+import TypescriptLogo from "../../assets/images/TypescriptLogo.png";
+
 const FinstaSection = () => {
   return (
     <div className="flex flex-col w-screen mx-auto items-center pb-[4vw]">
@@ -18,7 +31,20 @@ const FinstaSection = () => {
         logo={FinstaLogo}
         year="2023-now"
         title="Finsta App"
+        titleStyling="flex-nowrap"
         alt="finsta-dating-app"
+        techstack={[
+          { url: ReactLogo, alt: "React Logo", extraClasses: "object-cover" },
+          { url: TypescriptLogo, alt: "React Logo" },
+          {
+            url: TailwindLogo,
+            alt: "Tailwind Logo",
+          },
+          { url: NodeLogo, alt: "Node Logo" },
+          { url: PostgresLogo, alt: "PostgresQL Logo" },
+          { url: PythonLogo, alt: "Python Logo" },
+          { url: GraphqlLogo, alt: "GraphQL Logo", extraClasses: "rounded-sm" },
+        ]}
       />
       <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] justify-center">
         <p className=" w-full break-words text-xl text-custom-white pt-[2vw] font-custom opacity-75">
@@ -45,18 +71,18 @@ const FinstaSection = () => {
       </div>
       <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] flex-col ">
         <h1 className="flex w-full break-words text-2xl text-custom-white font-Roboto justify-center pt-[3vh] pb-[2.5vh] opacity-95">
-          The Finsta User Profile Page
+          Profile Page
         </h1>
-        <p className="flex  w-full break-words text-lg text-custom-white font-custom opacity-80">
-          Developed the Profile Page for a client called Finsta, following Figma
-          designs to accurately implement a dynamic user interface. Utilized
-          complex conditional logic to display content based on available data,
-          such as setting a default profile icon or using gallery images when no
-          icon was set. This involved updating data across 10 components,
-          optimizing GraphQL queries to fetch only relevant data and improving
-          loading speed by 30%. Additionally, I modified schemas and adjusted
-          data properties across the project, ensuring seamless integration and
-          error-free performance before merging with the main codebase.
+        <p className="flex  w-full break-words text-lg text-custom-white font-custom opacity-80 justify-center">
+          • Built dynamic user interface from Figma designs using React and
+          Tailwind CSS. <br />• Used GraphQL to fetch only necessary data,
+          improving loading speeds by 30%. <br />• Implemented conditional
+          rendering logic across 10+ components to display user profiles
+          intelligently.
+          <br />• Updated Prisma schemas and backend data structures for new
+          profile features.
+          <br />• Ensured full integration with existing systems via error-free
+          merges and thorough testing.
         </p>
       </div>
       <div className="flex lg:w-[30%] phone:w-[60%] flex-row justify-center space-x-6 m-10">
@@ -71,36 +97,53 @@ const FinstaSection = () => {
           alt="the-previous-profile-interface"
         />
       </div>
-      <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] flex-col ">
+      <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] flex-col space-y-10">
         <h1 className="flex w-full break-words text-2xl text-custom-white font-Roboto justify-center pt-[3vh] pb-[2.5vh] opacity-95">
-          Complex Features and Seamless User Experiences
+          Metabase Dashboard (PostgresSQL)
         </h1>
-        <p className="flex  w-full break-words text-lg text-custom-white font-custom opacity-80">
-          Built features like the in-app Call System (powered by WebRTC) and a
-          dynamic Like system with Stripe integration. Handled backend logic
-          using Express and ensured smooth data flow between services and UI
-          components.
-          <br /> <br /> Additionally, I created a Like Feature that allows users
-          to like photos with an optional payment system. This includes
-          integration with Stripe for secure transactions, dynamic data updates
-          using GraphQL, and responsive UI elements styled with Tailwind CSS.
-          User profiles, including biographies and stats, are displayed via
-          optimized API queries, ensuring smooth real-time updates. <br />{" "}
-          <br /> These features highlight my ability to handle complex data
-          flows and craft user-centric designs that combine functionality with
-          an exceptional user experience.
+        <p className="flex  w-full break-words text-lg text-custom-white font-custom opacity-80 justify-center">
+          • Designed and developed SQL queries to calculate metrics like total
+          users, top spenders, and top earners. <br />
+          • Built a visual dashboard using Metabase to display user and revenue
+          metrics in real time. <br />
+          • Optimized query performance by indexing key tables and writing
+          efficient JOIN and GROUP BY statements. <br />
+          • Used PostgreSQL as the database, integrating with Metabase for live
+          data visualization. <br />
+          • Created custom KPIs and filterable views to support business
+          intelligence and decision-making. <br />
         </p>
+
+        <video
+          className="rounded-md object-cover w-full h-full"
+          src={DashboardVideo}
+          title="Dashboard video"
+          playsInline
+          autoPlay
+          muted
+          loop
+        />
       </div>
+
       <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] flex-col ">
         <h1 className="flex w-full break-words text-2xl text-custom-white font-Roboto justify-center pt-[3vh] pb-[2.5vh] opacity-95">
-          Explore Page and advanced algorithms
+          Explore Page
         </h1>
-        <p className="flex  w-full break-words text-lg text-custom-white font-custom opacity-80">
-          To improve user discovery, I proposed and prototyped a lightweight
-          scoring algorithm for the Explore Page, ranking users based on
-          engagement metrics (e.g. like count, conversion rates). This laid the
-          groundwork for future classification logic or ML-based
-          recommendations.
+        <p className="flex  w-full break-words text-lg text-custom-white font-custom opacity-80 justify-center">
+          • Designed a lightweight scoring model using Python and scikit-learn,
+          ranking users based on engagement metrics like likes and conversion
+          rates.
+          <br />
+          • Prototyped classification logic with logistic regression and
+          decision trees to simulate visibility scoring.
+          <br />
+          • Connected the scoring prototype to live user data stored in
+          PostgreSQL via Node.js/Express API endpoints.
+          <br />
+          • Set up early experiments using Hugging Face Transformers for future
+          NLP-based user classification.
+          <br />• Focused on scalable and lightweight design, laying the
+          foundation for advanced machine learning and recommendation systems.
         </p>
       </div>
       <div className="flex lg:w-[30%]  phone:w-[60%] flex-row justify-center space-x-6 m-10 ">

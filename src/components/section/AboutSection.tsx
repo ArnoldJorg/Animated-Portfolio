@@ -122,7 +122,6 @@ const AboutSection = ({ onInViewChange }) => {
             <BorderAnimation />
             <VideoPlayer />
             {/* <DummyVideo /> */}
-
             {/* <PictureMe /> */}
             <video
               src={ArrowAnimation}
@@ -131,7 +130,6 @@ const AboutSection = ({ onInViewChange }) => {
               muted
               playsInline
               className="  grayscale z-5 lg:w-[12vw] lg:h-[12vw] sm:w-[24vw] sm:h-[24vw] phone:w-[20vw] phone:h-[20vw] lg:rotate-90 phone:rotate-160 absolute min-[1375px]:top-[calc(50%+19vw)] min-[1375px]:left-[37%] transform -translate-x-1/2 lg:top-[calc(50%+20vw)] lg:left-[40%] sm:max-[1375px]:top-[calc(0%+1vw)] phone:top-[calc(10%+1vw)] sm:max-[1375px]:left-[27%] phone:max-[1375px]:left-[28%] "
-              // add here the px where the arrow should move away from the text - range should be 1024-1175 px
             />
             <h2 className="z-5  text-white rotate-315  absolute lg:top-[calc(50%+18vw)] lg:left-[27%] phone:top-[10%] phone:left-[12%] transform -translate-x-1/2 font-Caveat  phone:text-lg sm:text-2xl opacity-75">
               Let me <br /> introduce <br /> myself
