@@ -1,17 +1,8 @@
-import React from "react";
 import JavascriptLogo from "../../assets/images/JavaScript-logo.png";
 import TailwindLogo from "../../assets/images/tailwind-logo.png";
-import GraphqlLogo from "../../assets/images/graphQL-logo.png";
-import NativeLogo from "../../assets/images/react-native-logo.png";
-import PostgresLogo from "../../assets/images/postgresql-logo.png";
-import NodeLogo from "../../assets/images/node-js-logo.png";
 import ReactLogo from "../../assets/images/logo512.png";
 import { useInView } from "react-intersection-observer";
-import AxiosLogo from "../../assets/images/axios-logo.png";
-import NotePad from "../../assets/images/note-pad.jpg";
-import PortfolioImage from "../../assets/images/portfolio-picture.png";
-import Projects from "../Projects.tsx";
-import ProjectDetails from "../ProjectDetails.tsx";
+import ProjectDetails from "../ProjectDetails";
 import TorchLogo from "../../assets/images/TorchLogo.png";
 import TensorflowLogo from "../../assets/images/TensorflowLogo.png";
 import ScikitLearnLogo from "../../assets/images/ScikitLearnLogo.png";
@@ -23,16 +14,18 @@ import NltkLogo from "../../assets/images/NLTK.png";
 import MatplotLibLogo from "../../assets/images/MatplotlibLogo.png";
 import HuggingFaceLogo from "../../assets/images/HuggingFaceLogo.png";
 import TypescriptLogo from "../../assets/images/TypescriptLogo.png";
-import Techstack from "./Techstack.tsx";
-import TinkeringSection from "./TinkeringSection.tsx";
-import StickyHeader from "./StickyHeader.tsx";
-import SocialButtons from "./SocialButtons.tsx";
+import Techstack from "./Techstack";
+import TinkeringSection from "./TinkeringSection";
+import StickyHeader from "./StickyHeader";
+import SocialButtons from "../buttons/SocialButtons";
 
-const MoreSection = ({ onInViewChange }) => {
+type MoreSectionProps = {
+  onInViewChange?: (InView: boolean, sectionName: string) => void;
+};
+
+const MoreSection = ({ onInViewChange }: MoreSectionProps) => {
   const { ref, inView } = useInView({
     threshold: 0.5,
-
-    // 0.9 is uni project
   });
 
   if (onInViewChange) onInViewChange(inView, "more");
@@ -112,28 +105,7 @@ const MoreSection = ({ onInViewChange }) => {
           />
         </div>
       </div>
-      {/* <Projects
-        images={[
-          {
-            url: PortfolioImage,
-            alt: "Image-of-a-Portfolio",
-            projectName: "Creative CV",
-            textColor: "text-zinc-900",
-            hoverText: "Click here to check out our project on Github!",
-            hyperlink: "https://arnoldjorg.github.io/Animated-Portfolio/",
-          },
-          {
-            url: NotePad,
-            alt: "Image-of-a-Note",
-            projectName: "Note App",
-            textColor: "text-white",
-
-            // hoverText: "Click here to check out our project on Github!",
-          },
-        ]}
-      /> */}
       <TinkeringSection />
-
       <div className="w-screen overflow-x-hidden">
         <Techstack />
       </div>

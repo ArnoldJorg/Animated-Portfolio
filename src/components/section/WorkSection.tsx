@@ -1,14 +1,13 @@
-import React from "react";
-import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import FinstaSection from "./FinstaSection.tsx";
-import QpointSection from "./QpointSection.tsx";
-import StickyHeader from "./StickyHeader.tsx";
+import FinstaSection from "./FinstaSection";
+import QpointSection from "./QpointSection";
 
-const WorkSection = ({ onInViewChange }) => {
+type WorkSectionProps = {
+  onInViewChange: (inView: boolean, sectionName: string) => void;
+};
+
+const WorkSection = ({ onInViewChange }: WorkSectionProps) => {
   const { ref, inView } = useInView({
-    // threshold: 0.2,
-    // threshold: 0.3, is uni project
     threshold: 0.2,
   });
 

@@ -1,4 +1,3 @@
-import React from "react";
 import ArnoldSelfie from "../../assets/images/ArnoldSelfie.jpg";
 
 const PictureMe = () => {
@@ -15,10 +14,3 @@ const PictureMe = () => {
 };
 
 export default PictureMe;
-{
-  /* <video
-src='https://ik.imagekit.io/ikmedia/example_video.mp4'
-width='1440'
-height='680'
-/> */
-}

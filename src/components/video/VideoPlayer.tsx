@@ -1,35 +1,5 @@
-// import React from "react";
-
-// const VideoPlayer = () => {
-//   return (
-//     <iframe
-//       // src={Logo}
-//       className=" phone:items-center z-20 inset-x-1/3 phone:justify-center phone:m-auto lg:absolute phone:w-[30vw] phone:h-[30vw] lg:w-[25vw] lg:h-[25vw]  rounded-full  pointer-events-auto object-contain  "
-//       // width="100"
-//       // height="100"
-//       // alt="react-image"
-//       src="https://www.youtube.com/embed/BwPo9XGWpFM"
-//       title="YouTube video"
-//       frameBorder="0"
-//       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-//       allowFullScreen
-//     />
-//   );
-// };
-
-// export default VideoPlayer;
-// {
-//   /* <video
-// src='https://ik.imagekit.io/ikmedia/example_video.mp4'
-// width='1440'
-// height='680'
-// /> */
-// }
-
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import PortfolioVideo from "./Portfolio_video.mp4";
-import Selfie from "../../assets/images/ArnoldSelfie.jpg";
-import TailwindLogo from "../../assets/images/tailwind-logo.png";
 
 const VideoPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false); // Initialize isPlaying with false
@@ -48,7 +18,6 @@ const VideoPlayer = () => {
 
   return (
     <div className="phone:items-center z-20 inset-x-1/3 phone:justify-center phone:m-auto lg:absolute phone:w-[30vw] phone:h-[30vw] lg:w-[25vw] lg:h-[25vw]  rounded-full  pointer-events-auto object-contain overflow-hidden">
-      {/* Video Element */}
       <video
         ref={videoRef}
         className="rounded-lg object-cover w-full h-full"
@@ -57,7 +26,6 @@ const VideoPlayer = () => {
         playsInline
         controls={false}
         onClick={handlePlayPause}
-        // poster={Selfie}
       />
       {!isPlaying && (
         <div
@@ -74,7 +42,6 @@ const VideoPlayer = () => {
           </svg>
         </div>
       )}
-      {/* Custom Play Button */}
     </div>
   );
 };

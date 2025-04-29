@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import AboutSection from "./components/section/AboutSection.tsx";
-import WorkSection from "./components/section/WorkSection.tsx";
-import MoreSection from "./components/section/MoreSection.tsx";
-import NavigationBar from "./components/NavigationBar.tsx";
+import { useState } from "react";
+import AboutSection from "./components/section/AboutSection";
+import WorkSection from "./components/section/WorkSection";
+import MoreSection from "./components/section/MoreSection";
+import NavigationBar from "./components/NavigationBar";
 
 function App() {
   const [activeSection, setActiveSection] = useState("");
-  const handleInViewChange = (inView, section) => {
+  const handleInViewChange = (inView: boolean, section: string): void => {
     if (inView) {
       setActiveSection(section);
     }

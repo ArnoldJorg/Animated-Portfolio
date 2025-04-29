@@ -1,37 +1,25 @@
-import React from "react";
 import FinstaLogo from "../../assets/images/Finsta.jpeg";
 import FinstaPage from "../../assets/images/finsta-profilepage.png";
 import FinstaPhone from "../../assets/images/finsta-iphone-picture-1.png";
 import Logo4 from "../../assets/images/Finsta-lady.png";
 import Logo5 from "../../assets/images/Finsta-Call.png";
-// import { useRef } from "react";
-// import { useInView } from "react-intersection-observer";
-// import { useState, useEffect } from "react";
-import StickyHeader from "./StickyHeader.tsx";
-// import DashboardVideo from "../../assets/video/DashboardVideo.mp4";
+import StickyHeader from "./StickyHeader";
 import DashboardVideo from "../video/DashboardVideo.mp4";
-// import JavascriptLogo from "../../assets/images/JavaScript-logo.png";
 import TailwindLogo from "../../assets/images/tailwind-logo.png";
 import GraphqlLogo from "../../assets/images/graphQL-logo.png";
-import NativeLogo from "../../assets/images/react-native-logo.png";
 import PostgresLogo from "../../assets/images/postgresql-logo.png";
 import NodeLogo from "../../assets/images/node-js-logo.png";
 import ReactLogo from "../../assets/images/logo512.png";
-import ProjectDetails from "../ProjectDetails.tsx";
 import PythonLogo from "../../assets/images/PythonLogo.png";
 import TypescriptLogo from "../../assets/images/TypescriptLogo.png";
 
 const FinstaSection = () => {
   return (
     <div className="flex flex-col w-screen mx-auto items-center pb-[4vw]">
-      {/* Spacer for fixed header */}
-      {/* <div ref={ref} className="h-1" /> */}
-
       <StickyHeader
         logo={FinstaLogo}
         year="2023-now"
         title="Finsta App"
-        titleStyling="flex-nowrap"
         alt="finsta-dating-app"
         techstack={[
           { url: ReactLogo, alt: "React Logo", extraClasses: "object-cover" },

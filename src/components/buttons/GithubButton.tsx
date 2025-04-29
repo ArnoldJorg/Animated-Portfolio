@@ -1,7 +1,6 @@
-import React from "react";
-import GithubLogo from "../assets/images/GithubLogo.png";
+import GithubLogo from "../../assets/images/GithubLogo.png";
 
-const GithubButton = ({ link }) => {
+const GithubButton = ({ link }: { link: string }) => {
   return (
     <a
       href={link}

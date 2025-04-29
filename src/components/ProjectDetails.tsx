@@ -1,10 +1,7 @@
-import React from "react";
-import ArrowIcon from "./icons/ArrowIcon.tsx";
+import ArrowIcon from "./icons/ArrowIcon";
 import YoutubeLogo from "../assets/images/YoutubeLogo.png";
-import GithubLogo from "../assets/images/GithubLogo.png";
-import YoutubeButton from "./YoutubeButton.tsx";
-import { useState } from "react";
-import GithubButton from "./GithubButton.tsx";
+import YoutubeButton from "./buttons/YoutubeButton";
+import GithubButton from "./buttons/GithubButton";
 
 type Icon = {
   url: string;

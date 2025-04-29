@@ -1,5 +1,3 @@
-import React from "react";
-
 const TinkeringSection = () => {
   return (
     <div className="flex lg:w-[30%] sm:w-[40%] phone:w-[60%] justify-center py-[8vw]">

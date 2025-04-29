@@ -1,19 +1,9 @@
-import React from "react";
 import QpointDevices from "../../assets/images/Q-point-all-devices.png";
 import QpointLogo from "../../assets/images/Q-pointlogo.png";
-import StickyHeader from "./StickyHeader.tsx";
-import { useInView } from "react-intersection-observer";
-import { useState, useEffect } from "react";
-
+import StickyHeader from "./StickyHeader";
 import JavascriptLogo from "../../assets/images/JavaScript-logo.png";
 import NativeLogo from "../../assets/images/react-native-logo.png";
-import ReactLogo from "../../assets/images/logo512.png";
-
-import ProjectDetails from "../ProjectDetails.tsx";
-import ScikitLearnLogo from "../../assets/images/ScikitLearnLogo.png";
-import PythonLogo from "../../assets/images/PythonLogo.png";
 import TypescriptLogo from "../../assets/images/TypescriptLogo.png";
-import AxiosLogo from "../../assets/images/axios-logo.png";
 
 const QpointSection = () => {
   return (
@@ -32,10 +22,6 @@ const QpointSection = () => {
           },
           { url: TypescriptLogo, alt: "Typescript Logo" },
           { url: JavascriptLogo, alt: "Javascript Logo" },
-          // {
-          //   url: AxiosLogo,
-          //   alt: "Axios Logo",
-          // },
         ]}
       />
       <div className="flex lg:w-[50%] sm:w-[60%] phone:w-[90%] flex-col justify-center">

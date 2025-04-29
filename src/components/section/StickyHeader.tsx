@@ -1,17 +1,20 @@
-import React from "react";
 import { useState, useEffect } from "react";
 
-interface titleProps {
+interface StickyHeaderProps {
   title: string;
   logo?: string;
   year?: string;
   alt?: string;
   isSticky?: boolean;
-  techstack?: techLogo[];
-  titleStyling?: string;
+  techstack?: TechLogo[];
+  // titleStyling?: string;
 }
 
-// ${isSticky ? "fixed w-[50%] top-0 z-10 shadow-lg" : "relative z-0"}`}
+interface TechLogo {
+  url: string;
+  alt: string;
+  extraClasses?: string;
+}
 
 function useMediaQuery(query: string) {
   const [matches, setMatches] = useState(false);
@@ -31,12 +34,12 @@ function useMediaQuery(query: string) {
 
 const StickyHeader = ({
   title,
-  titleStyling,
+  // titleStyling,
   logo,
   year,
   alt,
   techstack = [],
-}: titleProps) => {
+}: StickyHeaderProps) => {
   const isSmallScreen = useMediaQuery("(max-width: 480px)");
   return (
     <div
@@ -55,7 +58,6 @@ const StickyHeader = ({
             alt={alt}
           />
         )}
-        {/* if phone video width is a certain amount it render a   */}
         <h1
           className={`text-3xl lg:max-[1101px]:text-xl  font-Roboto text-white flex-shrink flex-wrap`}
         >
@@ -63,7 +65,7 @@ const StickyHeader = ({
           {title}
         </h1>
         {!isSmallScreen &&
-          techstack.map((techLogo, i) => (
+          techstack.map((techLogo: TechLogo, i) => (
             <img
               key={i}
               src={techLogo.url}
@@ -71,14 +73,12 @@ const StickyHeader = ({
               alt={techLogo.alt}
               width="25"
               height="25"
-
-              // "Portfolio-Image"
             />
           ))}
       </div>
       {isSmallScreen && (
         <div className="flex space-x-2 items-center">
-          {techstack.map((techLogo, i) => (
+          {techstack.map((techLogo: TechLogo, i) => (
             <img
               key={i}
               src={techLogo.url}
@@ -86,8 +86,6 @@ const StickyHeader = ({
               alt={techLogo.alt}
               width="20"
               height="20"
-
-              // "Portfolio-Image"
             />
           ))}
         </div>

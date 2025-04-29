@@ -1,8 +1,6 @@
-import React from "react";
 import YoutubeLogo from "../assets/images/YoutubeLogo.png";
-import { useState } from "react";
 
-const YoutubeButton = ({ link }) => {
+const YoutubeButton = ({ link }: { link: string }) => {
   return (
     <a
       href={link}

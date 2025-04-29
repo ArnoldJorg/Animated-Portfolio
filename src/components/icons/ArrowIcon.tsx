@@ -1,6 +1,4 @@
-import React from "react";
-
-const ArrowIcon = ({ size }) => {
+const ArrowIcon = ({ size }: { size?: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,5 +18,4 @@ const ArrowIcon = ({ size }) => {
   );
 };
 
-// "size-3 flex "
 export default ArrowIcon;

@@ -1,6 +1,4 @@
-import React from "react";
-
-const NavigationBar = ({ activeSection }) => {
+const NavigationBar = ({ activeSection }: { activeSection: string }) => {
   return (
     <div className="flex flex-row justify-center items-center lg:p-4 sm:p-3 lg:px-8 sm:px-6 phone:p-3 phone:px-4 phone:text-md bg-black rounded-full border-custom-grey-3 border-2 lg:text-xl sm:text-lg  ">
       <nav className="space-x-8">
