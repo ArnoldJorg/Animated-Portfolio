@@ -1,6 +1,6 @@
 import ArrowIcon from "./icons/ArrowIcon";
-import YoutubeLogo from "../assets/images/YoutubeLogo.png";
-import YoutubeButton from "./buttons/YoutubeButton";
+// import YoutubeLogo from "../assets/images/YoutubeLogo.png";
+// import YoutubeButton from "./buttons/YoutubeButton";
 import GithubButton from "./buttons/GithubButton";
 
 type Icon = {
@@ -16,11 +16,11 @@ type ProjectProps = {
   icons: Icon[];
 };
 
-const linkMap: { [key: string]: string } = {
-  "My Portfolio": "https://www.youtube.com/watch?v=BwPo9XGWpFM",
-  // "Data Science": "https://www.youtube.com/watch?v=BwPo9XGWpFM",
-  // Add more titles + links here as needed
-};
+// const linkMap: { [key: string]: string } = {
+//   "My Portfolio": "https://www.youtube.com/watch?v=BwPo9XGWpFM",
+//   // "Data Science": "https://www.youtube.com/watch?v=BwPo9XGWpFM",
+//   // Add more titles + links here as needed
+// };
 
 const gitHubMap: { [key: string]: string } = {
   "My Portfolio":
@@ -30,7 +30,7 @@ const gitHubMap: { [key: string]: string } = {
 };
 
 const ProjectDetails = ({ name, range, icons = [] }: ProjectProps) => {
-  const targetLink = linkMap[name];
+  // const targetLink = linkMap[name];
   const gitHubLink = gitHubMap[name];
 
   return (
