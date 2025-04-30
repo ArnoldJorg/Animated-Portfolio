@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import PortfolioVideo from "./Portfolio_video.mp4";
+import PortfolioVideo from "./Portfolio_video_compressed.mp4";
 
 const VideoPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false); // Initialize isPlaying with false
